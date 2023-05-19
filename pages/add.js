@@ -1,12 +1,12 @@
 import Container from "@/components/Container";
 import Link from "next/link";
-import { useState } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 
 export default function add() {
-  const [toko, setToko] = useState("");
-  const [pembeli, setPembeli] = useState("");
-  const [produk, setProduk] = useState("");
+  const [toko, setToko] = React.useState("");
+  const [pembeli, setPembeli] = React.useState("");
+  const [produk, setProduk] = React.useState("");
   const router = useRouter();
   const handleSubmit = (e) => {
     e.preventDefault();
