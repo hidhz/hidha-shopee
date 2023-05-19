@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
 
-export default function add() {
+export default function Add() {
   const [toko, setToko] = React.useState("");
   const [pembeli, setPembeli] = React.useState("");
   const [produk, setProduk] = React.useState("");
