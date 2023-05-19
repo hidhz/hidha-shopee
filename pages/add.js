@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export default () => {
+export default function add() {
   const [toko, setToko] = useState("");
   const [pembeli, setPembeli] = useState("");
   const [produk, setProduk] = useState("");
@@ -75,4 +75,4 @@ export default () => {
       </form>
     </Container>
   );
-};
+}

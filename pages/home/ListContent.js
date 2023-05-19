@@ -3,7 +3,7 @@ import { MdPerson4, MdSearchOff, MdOutlineCancel } from "react-icons/md";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoMdDoneAll } from "react-icons/io";
 
-export default ({ toko, pembeli, produk, status }) => {
+export default function ListContent({ toko, pembeli, produk, status }) {
   return (
     <div className="mb-12">
       <div className="shadow-lg rounded-md p-4">
@@ -42,4 +42,4 @@ export default ({ toko, pembeli, produk, status }) => {
       </div>
     </div>
   );
-};
+}

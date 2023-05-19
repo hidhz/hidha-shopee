@@ -1,4 +1,4 @@
-export default () => {
+export default function Footer() {
   return (
     <footer className="relative bottom-0 text-center py-4">
       <p className="text-sm text-slate-500">
@@ -6,4 +6,4 @@ export default () => {
       </p>
     </footer>
   );
-};
+}

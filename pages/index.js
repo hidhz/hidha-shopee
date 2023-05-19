@@ -28,6 +28,7 @@ export default function Home() {
         {lists ? (
           lists.map((list) => (
             <ListContent
+              key={list.id}
               toko={list.toko}
               pembeli={list.pembeli}
               produk={list.produk}
