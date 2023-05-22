@@ -5,7 +5,7 @@ import { IoMdDoneAll } from "react-icons/io";
 
 export default function ListContent({ toko, pembeli, produk, status }) {
   return (
-    <div className="mb-12">
+    <div className="mb-12 w-6/12">
       <div className="shadow-lg rounded-md p-4">
         <div className="flex justify-between">
           <div className="flex items-center text-2xl">

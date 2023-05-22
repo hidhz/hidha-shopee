@@ -1,0 +1,15 @@
+# index.js / for lists
+
+  {lists ? (
+            lists.map((list) => (
+              <ListContent
+                key={list.id}
+                toko={list.toko}
+                pembeli={list.pembeli}
+                produk={list.produk}
+                status={list.status}
+              />
+            ))
+          ) : (
+            <h1>kosong!</h1>
+)}

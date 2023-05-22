@@ -16,7 +16,7 @@ export default function Add() {
       toko,
       pembeli,
       produk,
-      status: "Belum Diapa-apain!!!",
+      status: "belum diproses!",
     };
     if (!storage) {
       localStorage.setItem("lists", JSON.stringify([data]));

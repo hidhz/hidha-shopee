@@ -1,21 +1,15 @@
 import Container from "@/components/Container";
 import InputText from "@/components/input";
-import ListContent from "@/pages/home/ListContent";
+//import ListContent from "@/pages/home/ListContent";
+import ListTable from "@/pages/home/ListTable";
 import Link from "next/link";
-import React from "react";
 
 export default function Home() {
-  const [lists, setLists] = React.useState("");
-  React.useEffect(() => {
-    if (localStorage.getItem("lists")) {
-      setLists(JSON.parse(localStorage.getItem("lists")));
-    }
-  }, []);
   return (
     <main className="text-slate-500">
       <Container>
         <div className="flex justify-between mb-24">
-          <h1 className="text-xl">
+          <h1 className="text-xl text-black">
             0 batal --- 0 kosong/ditawarin --- 0 diproses
           </h1>
           <Link
@@ -25,19 +19,9 @@ export default function Home() {
             tambah list
           </Link>
         </div>
-        {lists ? (
-          lists.map((list) => (
-            <ListContent
-              key={list.id}
-              toko={list.toko}
-              pembeli={list.pembeli}
-              produk={list.produk}
-              status={list.status}
-            />
-          ))
-        ) : (
-          <h1>kosong!</h1>
-        )}
+        <div className="overflow-x-hidden">
+          <ListTable />
+        </div>
       </Container>
     </main>
   );

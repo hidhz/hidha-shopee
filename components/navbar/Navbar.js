@@ -41,7 +41,7 @@ export default function Navbar() {
             </button>
             <div ref={navRef} className="hidden flex md:flex space-x-4">
             */}
-            <div ref={navRef} className="hidden flex space-x-4">
+            <div ref={navRef} className="hidden flex space-x-12">
               <NavItem href="/">home</NavItem>
               <NavItem href="/">dashboard</NavItem>
               <NavItem href="/">list</NavItem>
